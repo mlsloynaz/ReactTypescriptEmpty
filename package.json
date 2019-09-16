@@ -1,0 +1,47 @@
+{
+  "name": "my-typescript-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts-ts": "2.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "12.7.5",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "jest",
+    "eject": "react-scripts-ts eject"
+  },
+  "jest": {
+    "rootDir": "src",
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest",
+      ".(ts|tsx)": "<rootDir>/test/preprocessor.js"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}
